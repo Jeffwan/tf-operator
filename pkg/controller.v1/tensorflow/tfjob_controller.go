@@ -207,7 +207,6 @@ func (r *TFJobReconciler) GetPodsForJob(jobObject interface{}) ([]*corev1.Pod, e
 	return cm.ClaimPods(pods)
 }
 
-
 // GetServicesForJob returns the set of services that this job should manage.
 // It also reconciles ControllerRef by adopting/orphaning.
 // Note that the returned services are pointers into the cache.
